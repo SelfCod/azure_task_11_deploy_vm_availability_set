@@ -38,7 +38,7 @@ for ($i=1; $i -le 2; $i++) {
     -ResourceGroupName $resourceGroupName `
     -Name "$vmName-$i" `
     -Location $location `
-    -image $vmImage `
+    -Image $vmImage `
     -size $vmSize `
     -SubnetName $subnetName `
     -VirtualNetworkName $virtualNetworkName `
