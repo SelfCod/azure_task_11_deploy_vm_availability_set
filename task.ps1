@@ -39,10 +39,10 @@ for ($i=1; $i -le 2; $i++) {
     -Name "$vmName-$i" `
     -Location $location `
     -Image $vmImage `
-    -size $vmSize `
+    -Size $vmSize `
     -SubnetName $subnetName `
     -VirtualNetworkName $virtualNetworkName `
-    -SecurityGroupName $networkSecurityGroupName `
     -SshKeyName $sshKeyName `
-    -AvailabilitySetName $availabilitySetName
+    -AvailabilitySetName $availabilitySetName `
+    -SecurityGroupName $networkSecurityGroupName
 }
